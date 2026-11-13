@@ -79,14 +79,6 @@ a:hover { text-decoration-thickness: 2px; }
   padding: clamp(64px, 12vh, 120px) 24px 24px;
   text-align: center;
 }
-.eyebrow {
-  margin: 0 0 14px;
-  font-family: var(--mono);
-  font-size: 13px;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: var(--accent);
-}
 h1 {
   margin: 0;
   font-size: clamp(40px, 7vw, 64px);
