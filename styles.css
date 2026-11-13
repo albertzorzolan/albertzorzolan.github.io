@@ -108,8 +108,8 @@ h1 .prompt { color: var(--accent); margin-right: 0.4em; }
   list-style: none;
   font-size: 15px;
 }
-.links a::before { content: "["; color: var(--muted); }
-.links a::after { content: "]"; color: var(--muted); }
+.links a::before { content: "[" / ""; color: var(--muted); }
+.links a::after { content: "]" / ""; color: var(--muted); }
 
 /* Sticky section nav */
 nav {
@@ -126,7 +126,7 @@ nav {
   font-size: 14px;
 }
 nav a { color: var(--muted); text-decoration: none; }
-nav a::before { content: "./"; }
+nav a::before { content: "./" / ""; }
 nav a:hover { color: var(--accent); }
 @media (max-width: 420px) {
   nav { gap: 4px 16px; }
@@ -168,11 +168,11 @@ p { margin: 0 0 14px; }
 }
 .project summary::-webkit-details-marker { display: none; }
 .project summary::before {
-  content: "▸";
+  content: "▸" / "";
   color: var(--accent);
   font-family: var(--mono);
 }
-.project[open] summary::before { content: "▾"; }
+.project[open] summary::before { content: "▾" / ""; }
 .project summary:hover .project-name { text-decoration: underline; text-underline-offset: 3px; }
 
 .project-name { font-weight: 700; }
@@ -188,7 +188,7 @@ p { margin: 0 0 14px; }
   font-weight: 400;
   color: var(--muted);
 }
-.project-body h3::before { content: "# "; }
+.project-body h3::before { content: "# " / ""; }
 .project-body img {
   display: block;
   max-width: 100%;
