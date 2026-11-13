@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects · Albert Zorzolan</title>
+  <meta name="description" content="Projects by Albert Zorzolan: Mendr (iOS app), Kinwise (UnivaBio hackathon), a Kaggle EEG entry and early neuroscience research.">
+  <meta name="theme-color" content="#000000">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Projects · Albert Zorzolan">
+  <meta property="og:description" content="Projects by Albert Zorzolan: Mendr (iOS app), Kinwise (UnivaBio hackathon), a Kaggle EEG entry and early neuroscience research.">
+  <meta property="og:url" content="https://albertzorzolan.github.io/projects.html">
+  <meta property="og:image" content="https://albertzorzolan.github.io/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Albert Zorzolan, Babson '30, Boston">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css?v=pages1">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav aria-label="Site">
+      <a href="index.html" class="brand">Albert Zorzolan</a>
+      <a href="projects.html" aria-current="page">Projects</a>
+      <a href="experience.html">Experience</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section id="projects" aria-labelledby="projects-h">
+      <h1 id="projects-h">Projects</h1>
+
+      <article class="project" id="mendr" data-id="mendr">
+        <header class="project-head">
+          <h2 class="project-name">Mendr</h2>
+          <p class="status">iOS app · Live on the App Store</p>
+        </header>
+        <p>Mendr: Better Mornings is an iPhone app for sleep and energy. Each morning you answer a one-minute check-in about sleep, food, water, movement and how you feel, and Mendr sums it up as a Morning Snapshot from 0 to 100. You can start an invite-only crew of up to eight friends who check in together, and see trends from your own records. Optional accounts add friends and two-week seasons.</p>
+        <ul>
+          <li>Designed and shipped a social iOS wellness platform with friend graphs, group crews and ranked leaderboards.</li>
+          <li>Integrated HealthKit, WHOOP and Oura APIs for autofill, with per-category source priority to deduplicate data.</li>
+          <li>Embedded AI coaching and NLP input via an on-device LLM with server fallback; Supabase auth and cloud sync.</li>
+        </ul>
+        <dl class="facts">
+          <div><dt>Stack</dt><dd class="stack">Swift · SwiftUI · Supabase · HealthKit</dd></div>
+          <div><dt>Links</dt><dd class="project-links"><a href="https://apps.apple.com/app/id6799245609">View on the App Store</a></dd></div>
+        </dl>
+      </article>
+
+      <article class="project" id="kinwise" data-id="kinwise">
+        <header class="project-head">
+          <h2 class="project-name">Kinwise</h2>
+          <p class="status">Top 100 of 486 · UnivaBio 2026</p>
+        </header>
+        <p>A browser app for families caring for an older parent on many medicines. The parent checks in daily in their own words, Kinwise lines those check-ins up with medicine changes and cited geriatric prescribing criteria, and the family gets one reviewed page of questions to bring to the doctor or pharmacist. It runs entirely in the browser, with no server or sign-up.</p>
+        <ul>
+          <li>Co-built it with Neil Shah for the UnivaBio hackathon (theme: AI for Human Health), using AI coding tools.</li>
+          <li>A rule-based review engine checks medications against a 427-drug geriatric knowledge base; an on-device LLM only rewords findings the engine has verified.</li>
+          <li>Symptom extraction from diary entries scored F1 0.94 on 70 held-out synthetic stories; clinician briefs export as HL7 FHIR.</li>
+        </ul>
+        <p class="note">Top 100 of 486 projects at UnivaBio 2026. A working prototype on fictional data, not yet tested with real patients, caregivers or clinicians.</p>
+        <dl class="facts">
+          <div><dt>Stack</dt><dd class="stack">React · TypeScript · Python</dd></div>
+          <div><dt>Links</dt><dd class="project-links"><a href="https://albertzorzolan.github.io/UnivaBioBabson/">Live demo</a> <a href="https://github.com/albertzorzolan/UnivaBioBabson">Code</a></dd></div>
+        </dl>
+      </article>
+
+      <article class="project" id="eeg" data-id="eeg">
+        <header class="project-head">
+          <h2 class="project-name">Motor-imagery EEG decoding</h2>
+          <p class="status">Kaggle · In progress</p>
+        </header>
+        <p>An entry in a Kaggle competition on decoding imagined movement from a low-cost 8-channel EEG headset, aimed at rehabilitation. The models have to work on people they were never trained on.</p>
+        <p>I used an AI coding agent to build the pipeline: an ensemble of xDAWN spatial filtering and Riemannian tangent-space classifiers, re-centered per recording. Along the way a cue-timing data leak was found and excluded.</p>
+        <p class="note">The competition runs until February 2027. The code stays private until it ends.</p>
+        <dl class="facts">
+          <div><dt>Stack</dt><dd class="stack">Python · pyRiemann · scikit-learn · PyTorch</dd></div>
+        </dl>
+      </article>
+
+      <article class="project" id="research" data-id="research">
+        <header class="project-head">
+          <h2 class="project-name">Undergraduate research</h2>
+          <p class="status">Neuroscience + ML · Early stage</p>
+        </header>
+        <p>Undergraduate research at Babson, advised by Prof. Vicky Zhu.</p>
+        <ul>
+          <li>Investigating how the coherence length of a training stream, with total tokens and class statistics held fixed, shifts small transformers between in-context and in-weight learning, using mechanistic readouts of attention heads.</li>
+          <li>Aiming to project results onto the working-memory versus long-term-memory trade-off in human learning, where in-context learning mirrors fast, flexible working memory and in-weight learning mirrors durable synaptic change.</li>
+        </ul>
+        <p class="note">In progress since September 2026.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Albert Zorzolan</p>
+    <ul class="links">
+      <li><a href="https://github.com/albertzorzolan">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/albert-zorzolan/">LinkedIn</a></li>
+      <li><a href="mailto:azorzolan1@babson.edu">Email</a></li>
+    </ul>
+  </footer>
+</body>
+</html>
