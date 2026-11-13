@@ -65,7 +65,7 @@ a:hover { text-decoration-thickness: 2px; }
 .skip {
   position: absolute;
   left: 16px;
-  top: -40px;
+  top: -100px;
   padding: 6px 10px;
   background: var(--surface);
   border: 1px solid var(--border);
@@ -128,6 +128,15 @@ nav {
 nav a { color: var(--muted); text-decoration: none; }
 nav a::before { content: "./"; }
 nav a:hover { color: var(--accent); }
+@media (max-width: 420px) {
+  nav { gap: 4px 16px; }
+  nav a::before { content: none; }
+}
+@media (max-width: 360px) {
+  nav { gap: 4px 12px; font-size: 13px; }
+}
+
+.nowrap { white-space: nowrap; }
 
 /* Sections */
 section { padding: 40px 0 8px; }
@@ -177,7 +186,6 @@ p { margin: 0 0 14px; }
   font-family: var(--mono);
   font-size: 13px;
   font-weight: 400;
-  text-transform: lowercase;
   color: var(--muted);
 }
 .project-body h3::before { content: "# "; }
