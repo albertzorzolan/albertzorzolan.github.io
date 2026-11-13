@@ -4,11 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Creative Portfolio · Albert Zorzolan</title>
-  <meta name="description" content="Creative work by Albert Zorzolan.">
+  <meta name="description" content="Software by Albert Zorzolan (Mendr, Kinwise, a Kaggle EEG entry) and things he made in high school.">
   <meta name="theme-color" content="#000000">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Creative Portfolio · Albert Zorzolan">
-  <meta property="og:description" content="Creative work by Albert Zorzolan.">
+  <meta property="og:description" content="Software by Albert Zorzolan (Mendr, Kinwise, a Kaggle EEG entry) and things he made in high school.">
   <meta property="og:url" content="https://albertzorzolan.github.io/creative.html">
   <meta property="og:image" content="https://albertzorzolan.github.io/og-image.png">
   <meta property="og:image:width" content="1200">
@@ -16,7 +16,7 @@
   <meta property="og:image:alt" content="Albert Zorzolan, Babson '30, Boston">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css?v=pages2">
+  <link rel="stylesheet" href="styles.css?v=pages3">
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
@@ -32,9 +32,81 @@
   </header>
 
   <main id="main">
-    <section id="creative" aria-labelledby="creative-h">
-      <h1 id="creative-h">Creative Portfolio</h1>
-      <p class="note">Nothing here yet.</p>
+    <h1 id="creative-h">Creative Portfolio</h1>
+
+    <section id="software" aria-labelledby="software-h">
+      <h2 id="software-h">Software</h2>
+      <div class="soft-grid">
+      <article class="soft">
+        <img src="img/mendr.png" width="800" height="285" loading="lazy" alt="Six App Store screenshots of Mendr: home screen with a Morning Snapshot of 95, the sleep check-in, a crew of four friends, the how-are-you-feeling question, the daily care plan, and 14-day insights.">
+        <h3><a href="projects.html#mendr">Mendr</a></h3>
+        <p class="when">iOS app · Live on the App Store</p>
+        <p>Mendr: Better Mornings is an iPhone app for sleep and energy.</p>
+      </article>
+      <article class="soft">
+        <img src="img/kinwise.png" width="800" height="475" loading="lazy" alt="Kinwise demo home page: 'Notice what changes after a medicine change, and bring a clear question to the visit', with buttons for a guided tour, a patient view and a caregiver view.">
+        <h3><a href="projects.html#kinwise">Kinwise</a></h3>
+        <p class="when">Top 100 of 486 · UnivaBio 2026</p>
+        <p>A browser app for families caring for an older parent on many medicines.</p>
+      </article>
+      <article class="soft">
+        <h3><a href="projects.html#eeg">Motor-imagery EEG decoding</a></h3>
+        <p class="when">Kaggle · In progress</p>
+        <p>An entry in a Kaggle competition on decoding imagined movement from a low-cost 8-channel EEG headset, aimed at rehabilitation.</p>
+      </article>
+      </div>
+    </section>
+
+    <section id="making" aria-labelledby="making-h">
+      <h2 id="making-h">High school projects</h2>
+      <div class="work-list">
+      <article class="work">
+        <div class="work-media">
+          <img src="img/creative/print.jpg" width="750" height="1000" loading="lazy" alt="Large white sheet covered in green prints of Romanian 1-leu and 100-lei banknotes, crossed corner to corner by a wavy black line.">
+        </div>
+        <h3>Banknote print</h3>
+        <p class="when">March 2024</p>
+        <p class="caption">Romanian banknotes, the 1 leu and the 100 lei, printed in green again and again across a large sheet, with a black line running from corner to corner.</p>
+      </article>
+
+      <article class="work">
+        <div class="work-media wide">
+          <video src="img/creative/ramp.mp4" poster="img/creative/ramp-poster.jpg" width="960" height="640" controls muted loop playsinline preload="none" aria-label="A ball rolls down a wooden rail on a desk, flies off the edge and lands on a board on the floor."></video>
+        </div>
+        <h3>Ramp launch</h3>
+        <p class="when">May 2024</p>
+        <p class="caption">A ball rolls down a wooden rail set on a desk, leaves the edge and lands on a target board on the floor.</p>
+      </article>
+
+      <article class="work">
+        <div class="work-media">
+          <img src="img/creative/box-raw.jpg" width="750" height="1000" loading="lazy" alt="Plain wooden box, screwed together, sitting on a green cutting mat next to a steel square and ruler.">
+          <img src="img/creative/box-painted.jpg" width="750" height="1000" loading="lazy" alt="The same box painted in blue and white vertical stripes.">
+        </div>
+        <h3>Painted wooden box</h3>
+        <p class="when">May – June 2022</p>
+        <p class="caption">Cut and screwed together from wood, then masked with tape and spray-painted in blue and white stripes.</p>
+      </article>
+
+      <article class="work">
+        <div class="work-media">
+          <img src="img/creative/pc-build.jpg" width="750" height="1000" loading="lazy" alt="Hands fitting an Inno3D GeForce RTX graphics card into an open PC case next to a be quiet! tower cooler.">
+        </div>
+        <h3>PC build</h3>
+        <p class="when">April 2023</p>
+        <p class="caption">Putting together a desktop PC with a GeForce RTX graphics card and a be quiet! tower cooler.</p>
+      </article>
+
+      <article class="work">
+        <div class="work-media">
+          <img src="img/creative/bottle.jpg" width="750" height="1000" loading="lazy" alt="Plastic bottle hung upside down on wooden skewers, filled with a layer of gravel.">
+          <img src="img/creative/bottle-filter.jpg" width="750" height="1000" loading="lazy" alt="Looking down into the cut bottle at a paper filter layer.">
+        </div>
+        <h3>Layered bottle build</h3>
+        <p class="when">May – June 2023</p>
+        <p class="caption">A cut plastic bottle hung upside down on wooden skewers and filled in layers: gravel, a dark layer and a paper filter.</p>
+      </article>
+      </div>
     </section>
   </main>
 

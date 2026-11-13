@@ -173,6 +173,49 @@ main { padding: 96px 0 64px; }
 .entry h3 { margin: 0 0 6px; font-size: 17px; font-weight: 600; line-height: 1.45; }
 .entry-body > :last-child { margin-bottom: 0; }
 
+/* ------------------------------------------------ creative portfolio */
+#software, #making { margin-bottom: 72px; }
+#making { margin-bottom: 0; }
+#software h2, #making h2 {
+  margin: 0 0 24px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--muted);
+}
+#software img, #making img, #making video {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  background: var(--hover);
+}
+#software img { margin-bottom: 16px; border: 1px solid var(--border); }
+
+.soft-grid { display: grid; gap: 40px; }
+.soft h3, .work h3 { margin: 0; font-size: 19px; font-weight: 600; line-height: 1.35; }
+.soft h3 a { text-decoration: none; }
+.soft h3 a::after { content: " →" / ""; color: var(--muted); }
+.soft h3 a:hover { text-decoration: underline; text-decoration-color: var(--muted); }
+.soft .when, .work .when { margin: 2px 0 8px; }
+.soft p:last-child, .work p:last-child { margin-bottom: 0; }
+
+.work-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 48px 32px;
+}
+.work-media {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(0, 1fr);
+  gap: 8px;
+  margin-bottom: 14px;
+}
+.caption { font-size: 15px; color: var(--muted); }
+
 /* ------------------------------------------------ about */
 .prose p { max-width: 58ch; font-size: 19px; line-height: 1.6; }
 .contact { margin-top: 56px; }
@@ -206,6 +249,7 @@ main { padding: 96px 0 64px; }
   .where::before { content: "· " / ""; }
   .when { margin: 0; }
   .facts > div { grid-template-columns: 76px 1fr; }
+  .work-list { grid-template-columns: 1fr; gap: 48px; }
 }
 
 /* one quiet fade on load */
