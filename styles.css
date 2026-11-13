@@ -196,6 +196,7 @@ main { padding: 96px 0 64px; }
 .site-footer a:hover { color: var(--text); }
 
 @media (max-width: 600px) {
+  .site-header nav { gap: 6px 14px; font-size: 14px; }
   .site-header .brand { flex-basis: 100%; }
   main { padding: 64px 0 48px; }
   .hero { margin-bottom: 64px; }
