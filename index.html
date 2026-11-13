@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Albert Zorzolan</title>
   <meta name="description" content="Albert Zorzolan, Babson '30. Projects: Mendr (iOS app), Kinwise (UnivaBio hackathon), a Kaggle EEG entry and early neuroscience research.">
-  <meta name="theme-color" content="#0d1117">
+  <meta name="theme-color" content="#0b0e13" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#f4f6f8" media="(prefers-color-scheme: light)">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Albert Zorzolan">
   <meta property="og:description" content="Babson '30. Projects: Mendr (iOS app), Kinwise (UnivaBio hackathon), a Kaggle EEG entry and early neuroscience research.">
@@ -13,170 +14,212 @@
   <meta property="og:image" content="https://albertzorzolan.github.io/og-image.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Albert Zorzolan, Babson '30, Boston">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <script>document.documentElement.classList.add("js")</script>
   <link rel="stylesheet" href="styles.css">
+  <script src="vault.js" defer></script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
 
-  <header>
-    <h1><span class="prompt" aria-hidden="true">&gt;</span>albert <span class="nowrap">zorzolan<span class="cursor" aria-hidden="true"></span></span></h1>
-    <p class="meta">babson '30 · boston</p>
+  <header class="intro">
+    <p class="eyebrow">Portfolio</p>
+    <h1>Albert Zorzolan</h1>
+    <p class="meta">Babson '30 · Boston</p>
     <ul class="links">
-      <li><a href="https://github.com/albertzorzolan">github</a></li>
-      <li><a href="https://www.linkedin.com/in/albert-zorzolan/">linkedin</a></li>
-      <li><a href="mailto:azorzolan1@babson.edu">email</a></li>
+      <li><a href="https://github.com/albertzorzolan">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/albert-zorzolan/">LinkedIn</a></li>
+      <li><a href="mailto:azorzolan1@babson.edu">Email</a></li>
     </ul>
   </header>
 
-  <nav aria-label="Sections">
-    <a href="#projects">projects</a>
-    <a href="#experience">experience</a>
-    <a href="#about">about</a>
-    <a href="#contact">contact</a>
-  </nav>
-
   <main id="main">
-    <section id="projects" aria-labelledby="projects-h">
-      <h2 class="label" id="projects-h"><span class="dollar" aria-hidden="true">$</span> ls projects/</h2>
+    <nav class="vaults" aria-label="Vaults">
+      <a class="vault" href="#projects">
+        <span class="vault-frame" aria-hidden="true">
+          <span class="vault-door">
+            <span class="vault-bolts"></span>
+            <span class="vault-wheel"><span class="spoke"></span><span class="spoke"></span><span class="spoke"></span><span class="hub"></span></span>
+          </span>
+        </span>
+        <span class="vault-label">Projects</span>
+        <span class="vault-meta">Vault 01 · 4 items</span>
+      </a>
+      <a class="vault" href="#experience">
+        <span class="vault-frame" aria-hidden="true">
+          <span class="vault-door">
+            <span class="vault-bolts"></span>
+            <span class="vault-wheel"><span class="spoke"></span><span class="spoke"></span><span class="spoke"></span><span class="hub"></span></span>
+          </span>
+        </span>
+        <span class="vault-label">Experience</span>
+        <span class="vault-meta">Vault 02 · 7 entries</span>
+      </a>
+      <a class="vault" href="#about">
+        <span class="vault-frame" aria-hidden="true">
+          <span class="vault-door">
+            <span class="vault-bolts"></span>
+            <span class="vault-wheel"><span class="spoke"></span><span class="spoke"></span><span class="spoke"></span><span class="hub"></span></span>
+          </span>
+        </span>
+        <span class="vault-label">About</span>
+        <span class="vault-meta">Vault 03 · Bio and contact</span>
+      </a>
+    </nav>
+    <p class="hint">Select a vault to open it.</p>
 
-      <details class="project" open>
-        <summary><span class="project-name">mendr/</span><span class="project-status">ios app · live on the App Store</span></summary>
-        <div class="project-body">
-          <h3>what it is</h3>
+    <section id="projects" class="vault-room" aria-labelledby="projects-h">
+      <div class="room-inner">
+        <div class="room-bar">
+          <span class="room-tag">Vault 01</span>
+          <button class="vault-close" type="button">Close vault</button>
+        </div>
+        <h2 id="projects-h" tabindex="-1">Projects</h2>
+
+        <article class="project" data-id="mendr">
+          <div class="project-head">
+            <h3 class="project-name">Mendr</h3>
+            <span class="pill">iOS app · Live on the App Store</span>
+          </div>
           <p>Mendr: Better Mornings is an iPhone app for sleep and energy. Each morning you answer a one-minute check-in about sleep, food, water, movement and how you feel, and Mendr sums it up as a Morning Snapshot from 0 to 100. You can start an invite-only crew of up to eight friends who check in together, and see trends from your own records. Optional accounts add friends and two-week seasons.</p>
-          <h3>what I did</h3>
+          <h4>What I did</h4>
           <ul>
             <li>Designed and shipped a social iOS wellness platform with friend graphs, group crews and ranked leaderboards.</li>
             <li>Integrated HealthKit, WHOOP and Oura APIs for autofill, with per-category source priority to deduplicate data.</li>
             <li>Embedded AI coaching and NLP input via an on-device LLM with server fallback; Supabase auth and cloud sync.</li>
           </ul>
-          <p class="muted mono">Swift · SwiftUI · Supabase · HealthKit</p>
-          <h3>status</h3>
-          <p>Live on the App Store. The core journal works without an account.</p>
-          <p class="links"><a href="https://apps.apple.com/app/id6799245609">app store</a></p>
+          <p class="stack">Swift · SwiftUI · Supabase · HealthKit</p>
+          <p class="project-links"><a href="https://apps.apple.com/app/id6799245609">View on the App Store</a></p>
           <img src="img/mendr.png" width="800" height="285" loading="lazy" alt="Six App Store screenshots of Mendr: home screen with a Morning Snapshot of 95, the sleep check-in, a crew of four friends, the how-are-you-feeling question, the daily care plan, and 14-day insights.">
-        </div>
-      </details>
+        </article>
 
-      <details class="project">
-        <summary><span class="project-name">kinwise/</span><span class="project-status">top 100 of 486 · UnivaBio 2026</span></summary>
-        <div class="project-body">
-          <h3>what it is</h3>
+        <article class="project" data-id="kinwise">
+          <div class="project-head">
+            <h3 class="project-name">Kinwise</h3>
+            <span class="pill">Top 100 of 486 · UnivaBio 2026</span>
+          </div>
           <p>A browser app for families caring for an older parent on many medicines. The parent checks in daily in their own words, Kinwise lines those check-ins up with medicine changes and cited geriatric prescribing criteria, and the family gets one reviewed page of questions to bring to the doctor or pharmacist. It runs entirely in the browser, with no server or sign-up.</p>
-          <h3>what I did</h3>
+          <h4>What I did</h4>
           <ul>
             <li>Co-built it with Neil Shah for the UnivaBio hackathon (theme: AI for Human Health), using AI coding tools.</li>
             <li>A rule-based review engine checks medications against a 427-drug geriatric knowledge base; an on-device LLM only rewords findings the engine has verified.</li>
             <li>Symptom extraction from diary entries scored F1 0.94 on 70 held-out synthetic stories; clinician briefs export as HL7 FHIR.</li>
           </ul>
-          <p class="muted mono">React · TypeScript · Python</p>
-          <h3>status</h3>
+          <p class="stack">React · TypeScript · Python</p>
           <p>Top 100 of 486 projects at UnivaBio 2026. A working prototype on fictional data, not yet tested with real patients, caregivers or clinicians.</p>
-          <p class="links"><a href="https://albertzorzolan.github.io/UnivaBioBabson/">live demo</a> <a href="https://github.com/albertzorzolan/UnivaBioBabson">code</a></p>
+          <p class="project-links"><a href="https://albertzorzolan.github.io/UnivaBioBabson/">Live demo</a> <a href="https://github.com/albertzorzolan/UnivaBioBabson">Code</a></p>
           <img src="img/kinwise.png" width="800" height="475" loading="lazy" alt="Kinwise demo home page: 'Notice what changes after a medicine change, and bring a clear question to the visit', with buttons for a guided tour, a patient view and a caregiver view.">
-        </div>
-      </details>
+        </article>
 
-      <details class="project">
-        <summary><span class="project-name">eeg-bci/</span><span class="project-status">kaggle · in progress</span></summary>
-        <div class="project-body">
-          <h3>what it is</h3>
+        <article class="project" data-id="eeg">
+          <div class="project-head">
+            <h3 class="project-name">Motor-imagery EEG decoding</h3>
+            <span class="pill">Kaggle · In progress</span>
+          </div>
           <p>An entry in a Kaggle competition on decoding imagined movement from a low-cost 8-channel EEG headset, aimed at rehabilitation. The models have to work on people they were never trained on.</p>
-          <h3>what I did</h3>
+          <h4>What I did</h4>
           <p>I used an AI coding agent to build the pipeline: an ensemble of xDAWN spatial filtering and Riemannian tangent-space classifiers, re-centered per recording. Along the way a cue-timing data leak was found and excluded.</p>
-          <p class="muted mono">Python · pyRiemann · scikit-learn · PyTorch</p>
-          <h3>status</h3>
+          <p class="stack">Python · pyRiemann · scikit-learn · PyTorch</p>
           <p>The competition runs until February 2027. The code stays private until it ends.</p>
-        </div>
-      </details>
+        </article>
 
-      <details class="project">
-        <summary><span class="project-name">research/</span><span class="project-status">neuro + ML · early stage</span></summary>
-        <div class="project-body">
-          <h3>what it is</h3>
+        <article class="project" data-id="research">
+          <div class="project-head">
+            <h3 class="project-name">Undergraduate research</h3>
+            <span class="pill">Neuroscience + ML · Early stage</span>
+          </div>
           <p>Undergraduate research at Babson, advised by Prof. Vicky Zhu.</p>
           <ul>
             <li>Investigating how the coherence length of a training stream, with total tokens and class statistics held fixed, shifts small transformers between in-context and in-weight learning, using mechanistic readouts of attention heads.</li>
             <li>Aiming to project results onto the working-memory versus long-term-memory trade-off in human learning, where in-context learning mirrors fast, flexible working memory and in-weight learning mirrors durable synaptic change.</li>
           </ul>
-          <h3>status</h3>
           <p>In progress since September 2026.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience" class="vault-room" aria-labelledby="experience-h">
+      <div class="room-inner">
+        <div class="room-bar">
+          <span class="room-tag">Vault 02</span>
+          <button class="vault-close" type="button">Close vault</button>
         </div>
-      </details>
-    </section>
+        <h2 id="experience-h" tabindex="-1">Experience</h2>
 
-    <section id="experience" aria-labelledby="experience-h">
-      <h2 class="label" id="experience-h"><span class="dollar" aria-hidden="true">$</span> cat experience.txt</h2>
+        <div class="entry">
+          <h3>Undergraduate Researcher · Babson College</h3>
+          <p class="when">Sept. 2026 – present · Wellesley, MA</p>
+          <p>Advised by Prof. Vicky Zhu. Details in the Projects vault.</p>
+        </div>
 
-      <div class="entry">
-        <h3>Undergraduate Researcher · Babson College</h3>
-        <p class="when">Sept. 2026 – present · Wellesley, MA</p>
-        <p>Advised by Prof. Vicky Zhu (see <a href="#projects">projects</a>).</p>
-      </div>
+        <div class="entry">
+          <h3>Mendr · Founder, Developer</h3>
+          <p class="when">June 2026 – present</p>
+          <p>Building an iPhone app for better mornings with friends. Details in the Projects vault.</p>
+        </div>
 
-      <div class="entry">
-        <h3>Mendr · Founder, Developer</h3>
-        <p class="when">June 2026 – present</p>
-        <p>Building an iPhone app for better mornings with friends (see <a href="#projects">projects</a>).</p>
-      </div>
+        <div class="entry">
+          <h3>EY · Robotic Process Automation Intern</h3>
+          <p class="when">July 2025 · Bucharest</p>
+          <ul>
+            <li>Completed UiPath Academy certificates in agentic AI fundamentals, agentic automation and workflow design.</li>
+            <li>Built UiPath workflows to automate email categorization and responses, business analytics and data processing.</li>
+            <li>Helped build a pitch deck for a Romanian company on letting agentic AI handle repetitive operational tasks.</li>
+          </ul>
+        </div>
 
-      <div class="entry">
-        <h3>EY · Robotic Process Automation Intern</h3>
-        <p class="when">July 2025 · Bucharest</p>
-        <ul>
-          <li>Completed UiPath Academy certificates in agentic AI fundamentals, agentic automation and workflow design.</li>
-          <li>Built UiPath workflows to automate email categorization and responses, business analytics and data processing.</li>
-          <li>Helped build a pitch deck for a Romanian company on letting agentic AI handle repetitive operational tasks.</li>
-        </ul>
-      </div>
+        <div class="entry">
+          <h3>Babson Biotech Club · Freshman Representative</h3>
+          <p class="when">Sept. 2026 – present</p>
+          <ul>
+            <li>Organizing the club's speaker series of fireside chats with healthcare professionals.</li>
+            <li>Working to start a beginner neurotechnology branch with hands-on EEG and brain-computer interface workshops.</li>
+          </ul>
+        </div>
 
+        <div class="entry">
+          <h3>Babson Analyst Initiative · Equity Research Analyst, NVIDIA</h3>
+          <p class="when">Sept. 2026 – present</p>
+        </div>
 
+        <div class="entry">
+          <h3>Babson College · BS Business Administration</h3>
+          <p class="when">Aug. 2026 – May 2030 · Wellesley, MA</p>
+        </div>
 
-      <div class="entry">
-        <h3>Babson Biotech Club · Freshman Representative</h3>
-        <p class="when">Sept. 2026 – present</p>
-        <ul>
-          <li>Organizing the club's speaker series of fireside chats with healthcare professionals.</li>
-          <li>Working to start a beginner neurotechnology branch with hands-on EEG and brain-computer interface workshops.</li>
-        </ul>
-      </div>
-
-      <div class="entry">
-        <h3>Babson Analyst Initiative · Equity Research Analyst, NVIDIA</h3>
-        <p class="when">Sept. 2026 – present</p>
-      </div>
-
-      <div class="entry">
-        <h3>Babson College · BS Business Administration</h3>
-        <p class="when">Aug. 2026 – May 2030 · Wellesley, MA</p>
-      </div>
-
-      <div class="entry">
-        <h3>American International School of Bucharest · IB Diploma, 42/45</h3>
-        <p class="when">Aug. 2022 – May 2026 · Bucharest, Romania</p>
+        <div class="entry">
+          <h3>American International School of Bucharest · IB Diploma, 42/45</h3>
+          <p class="when">Aug. 2022 – May 2026 · Bucharest, Romania</p>
+        </div>
       </div>
     </section>
 
-    <section id="about" aria-labelledby="about-h">
-      <h2 class="label" id="about-h"><span class="dollar" aria-hidden="true">$</span> whoami</h2>
-      <p>I'm a first-year at Babson, from Bucharest. I'm interested in how the brain works and how to model it with neural networks, and I'm learning computer science and math to get there.</p>
-      <p>Right now I'm building Mendr and doing research with Prof. Vicky Zhu on how small transformers learn.</p>
-    </section>
+    <section id="about" class="vault-room" aria-labelledby="about-h">
+      <div class="room-inner">
+        <div class="room-bar">
+          <span class="room-tag">Vault 03</span>
+          <button class="vault-close" type="button">Close vault</button>
+        </div>
+        <h2 id="about-h" tabindex="-1">About</h2>
+        <p>I'm a first-year at Babson, from Bucharest. I'm interested in how the brain works and how to model it with neural networks, and I'm learning computer science and math to get there.</p>
+        <p>Right now I'm building Mendr and doing research with Prof. Vicky Zhu on how small transformers learn.</p>
 
-    <section id="contact" aria-labelledby="contact-h">
-      <h2 class="label" id="contact-h"><span class="dollar" aria-hidden="true">$</span> contact</h2>
-      <ul class="links">
-        <li><a href="https://github.com/albertzorzolan">github.com/albertzorzolan</a></li>
-        <li><a href="https://www.linkedin.com/in/albert-zorzolan/">linkedin.com/in/albert-zorzolan</a></li>
-        <li><a href="mailto:azorzolan1@babson.edu">email</a></li>
-      </ul>
+        <div id="contact" class="contact">
+          <h3>Contact</h3>
+          <ul class="links">
+            <li><a href="https://github.com/albertzorzolan">github.com/albertzorzolan</a></li>
+            <li><a href="https://www.linkedin.com/in/albert-zorzolan/">linkedin.com/in/albert-zorzolan</a></li>
+            <li><a href="mailto:azorzolan1@babson.edu">Email</a></li>
+          </ul>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>© 2026 Albert Zorzolan · plain HTML and CSS, no tracking</p>
+    <p>© 2026 Albert Zorzolan</p>
   </footer>
 </body>
 </html>
